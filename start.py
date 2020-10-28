@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 # Przedmiot: Informatyka
-# Kierunek studiów: ???
+# Kierunek studiów: Energetyka
 # Semestr: zimowy
 # Rok akademicki: 2020/2021
 # Data (dzień.miesiąc.rok): 31.11.2020
-# Imię: ???
-# Nazwisko: ???
-# Numer albumu ZUT: ???
+# Imię: Zbigniew
+# Nazwisko: Wereszczyński
+# Numer albumu ZUT: wz49676
 
 """
 W tym miejscu przepisać temat.
