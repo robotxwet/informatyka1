@@ -1,1 +1,8 @@
-Początek
+tekst1 = "Cześć"
+tekst2 =input("Podaj tekst: ")
+
+print(tekst1 + " " + tekst2)
+
+#print wyświetla wynik w konsoli
+#input zadaje pytanie w konsoli trzeba
+#zmienne nie mogą mieć wewnątrz siebie żadnych spacji unikamy znaków specjalnych
