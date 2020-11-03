@@ -1,8 +1,17 @@
-tekst1 = "Cześć"
-tekst2 =input("Podaj tekst: ")
+samogłoski = ('a','ą','e','ę','i','o','ó','u','y') #mój zbiór samogłosek
+zdanie = []                                 #nie wiedzieć czemu nawias {} niszczył równnanie, całe zdanie otacza znakiem
+samogłoska =[]                              #musi być znak, dodaje do pierwszej samogłoski wybrany znak
 
-print(tekst1 + " " + tekst2)
+tekst = input('podaj słowo: ')              #komputer pyta się o słowo
+for znak in tekst:                          #pętla obiektowa for
+    if znak in samogłoski:                  #pętla zwykła dla samogłosek
+        samogłoska += znak                  #co robi z samogłoskami == usuwa, = nic nie robi
+        zdanie.append(samogłoska)
+        samogłoska = []                     #definiuje co otacza samogłoski
+    else:
+        zdanie += znak                      #co robi ze spółgłoskami == usuwa, = błąd, +=otacza znakiem
 
-#print wyświetla wynik w konsoli, trzeba uruchomić program, żeby go wyświetlić
-#input zadaje pytanie, w konsoli trzeba odpowiedzieć i nacisnąć enter
-#zmienne nie mogą mieć wewnątrz siebie żadnych spacji, unikamy znaków specjalnych
+if samogłoska:
+    zdanie.append(samogłoska)
+        
+print(zdanie)                               #problem każdy znak jest w "" i oddzielony przecinkiem
