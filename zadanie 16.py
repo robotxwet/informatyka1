@@ -12,4 +12,3 @@ for znak in tekst:                          #pętla obiektowa for, każdemu elem
         zdanie += znak                      #co robi ze spółgłoskami == usuwa, = błąd, += idzie dalej
         
 print(zdanie)                               
-#dodanie str nie robi różnicy
