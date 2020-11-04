@@ -1,17 +1,15 @@
-samogłoski = ('a','ą','e','ę','i','o','ó','u','y') #mój zbiór samogłosek
-zdanie = []                                 #nie wiedzieć czemu nawias {} niszczył równnanie, całe zdanie otacza znakiem
+samogłoski = ('a','ą','e','ę','i','o','ó','u','y') #mój zbiór samogłosek, lista
+zdanie = []                                 #nie wiem czemu {},() to błąd i "" niszczyło równnanie, zdanie otacza znakiem
 samogłoska =[]                              #musi być znak, dodaje do pierwszej samogłoski wybrany znak
 
 tekst = input('podaj słowo: ')              #komputer pyta się o słowo
-for znak in tekst:                          #pętla obiektowa for
-    if znak in samogłoski:                  #pętla zwykła dla samogłosek
+for znak in tekst:                          #pętla obiektowa for, każdemu elementowi w liście tekst daje wartość x
+    if znak in samogłoski:                  #pętla zwykła, jeśli znak jest samogłoską
         samogłoska += znak                  #co robi z samogłoskami == usuwa, = nic nie robi
-        zdanie.append(samogłoska)
-        samogłoska = []                     #definiuje co otacza samogłoski
+        zdanie.append(samogłoska)           #append to metoda dodająca do listy, do zbioru zdanie dodaje samogłoskę
+        samogłoska = []                     #definiuje co otacza samogłoski, wstawienie innych znaków powoduje błąd
     else:
-        zdanie += znak                      #co robi ze spółgłoskami == usuwa, = błąd, +=otacza znakiem
-
-if samogłoska:
-    zdanie.append(samogłoska)
+        zdanie += znak                      #co robi ze spółgłoskami == usuwa, = błąd, += idzie dalej
         
-print(zdanie)                               #problem każdy znak jest w "" i oddzielony przecinkiem
+print(zdanie)                               #problem każdy znak jest w "" i oddzielony przecinkiem,
+#dodanie str nie robi różnicy
