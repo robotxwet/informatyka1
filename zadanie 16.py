@@ -11,5 +11,5 @@ for znak in tekst:                          #pętla obiektowa for, każdemu elem
     else:
         zdanie += znak                      #co robi ze spółgłoskami == usuwa, = błąd, += idzie dalej
         
-print(zdanie)                               #problem każdy znak jest w "" i oddzielony przecinkiem,
+print(zdanie)                               
 #dodanie str nie robi różnicy
